@@ -38,3 +38,4 @@ env/
 # General
 *.log
 .env
+*.docx
