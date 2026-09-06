@@ -39,3 +39,4 @@ env/
 *.log
 .env
 *.docx
+*.pptx
