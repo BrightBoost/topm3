@@ -144,4 +144,3 @@ Leg je keuze uit.
 1. Wanneer is een URL "te diep" genest? Noem een concreet voorbeeld.
 2. Wat is het verschil tussen een breaking change en een backward compatible change?
 3. Waarom is `null` vaak riskanter dan een ontbrekend veld?
-4. Wanneer zou je bewust kiezen voor een `v1`-variant in plaats van een "schoon" model zonder versie?
