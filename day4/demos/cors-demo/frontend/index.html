@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CORS demo</title>
+</head>
+
+<body>
+    <h1>CORS demo</h1>
+    <button id="public">Call public endpoint</button>
+    <button id="private">Call private endpoint</button>
+    <pre id="output"></pre>
+    <script>
+        const output = document.querySelector('#output');
+        async function call(path) {
+            try {
+                const response = await fetch(`http://localhost:8080${path}`);
+                output.textContent = `${response.status}: ${await response.text()}`;
+            } catch (error) {
+                output.textContent = `${error.name}: ${error.message}`;
+            }
+        }
+        document.querySelector('#public').addEventListener('click', () => call('/api/public'));
+        document.querySelector('#private').addEventListener('click', () => call('/api/private'));
+    </script>
+</body>
+
+</html>
