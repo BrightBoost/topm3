@@ -59,7 +59,6 @@ Follow `verifyAccessToken()` in `TokenVerifier`: note the order of type, signatu
 
 </details>
 
-<details>
 
 
 
