@@ -25,7 +25,7 @@ Your architecture team is reviewing authentication choices for several upcoming 
 ## Prerequisites
 
 - Basic understanding of HTTP APIs and authentication.
-- Familiarity with Basic Auth, API keys, bearer tokens, JWT, OAuth/OIDC, and TLS.
+- Familiarity with Basic Auth, API keys, bearer tokens, JWT, OAuth/OIDC.
 - No coding, software installation, or starter project is required.
 
 # Lab Parts
@@ -46,7 +46,7 @@ In small groups, read the case cards and choose a primary authentication approac
 4. **Partner integration:** A small number of registered partners call a public API as their own systems. Each partner can be disabled independently.
 5. **Fine-grained user access:** A mobile app lets users access different API capabilities depending on the access granted during sign-in.
 
-For each case, consider Basic Auth, API keys, bearer access tokens, OAuth 2.0/OIDC, and mutual TLS where appropriate. JWT is a token format that may carry claims; it is not by itself a complete login or authorization protocol.
+For each case, consider Basic Auth, API keys, bearer access tokens, OAuth 2.0/OIDC where appropriate. JWT is a token format that may carry claims; it is not by itself a complete login or authorization protocol.
 
 ### Success criteria
 
@@ -74,7 +74,7 @@ Ask whether the API needs user identity, service identity, or delegated access.
 <details>
 <summary>Hint 3</summary>
 
-Consider OAuth/OIDC when a user signs in through a provider. For service identities, compare API keys with stronger options such as mutual TLS.
+Consider OAuth/OIDC when a user signs in through a provider. Optional: For service identities, compare API keys with stronger options such as mutual TLS.
 
 </details>
 
@@ -110,7 +110,7 @@ A suitable protocol does not automatically make the API secure.
 <details>
 <summary>Hint 2</summary>
 
-Include TLS, least privilege, revocation or rotation, and monitoring in the comparison where relevant.
+Include least privilege, revocation or rotation, and monitoring in the comparison where relevant.
 
 </details>
 
@@ -127,7 +127,7 @@ Create a “decision reversal” for one case: change a single business or secur
 
 # Reflection Questions
 
-1. Which case made the choice between an API key and mutual TLS most difficult, and which trust assumption decided it?
+
 2. What did the customer-facing application need from OAuth/OIDC that a shared API key could not provide?
 3. Which extra controls would your team require before using bearer tokens in production?
 4. Which part of the discussion was hardest to resolve: caller identity, access scope, or credential lifecycle?
